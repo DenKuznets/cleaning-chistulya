@@ -16,7 +16,7 @@ body {
     font-family: 'Fregat';
     background-color: $white;
     color: $black;
-    padding-bottom: 20px;
+    // padding-bottom: 20px;
 }
 
 section,
@@ -259,9 +259,12 @@ img {
     position: relative;
     background-image: url('../../src/assets/img/mask-3.svg');
     background-repeat: no-repeat;
-    background-size: 1920px;
+    background-size: 2560px;
     background-position: center 0;
     height: 100%;
+    @media only screen and (max-width: $px360) {
+        background-image: none;
+    }
 }
 
 p.important-paragraph {
