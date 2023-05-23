@@ -12,6 +12,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+
     @media only screen and (max-width: $text-column) {
       grid-template-columns: 1fr;
       justify-items: center;
@@ -39,6 +40,10 @@
       text-transform: uppercase;
       color: $sky;
       white-space: nowrap;
+
+      &:hover{
+        color: $hover-color;
+      }
 
       @media only screen and (max-width: 450px) {
         font-size: 35px;
