@@ -34,7 +34,17 @@
     /* Может быть больше или меньше, в зависимости от размера экрана */
     min-width: 200px;
 
-    @media (max-width: 1024px) {
+    @media only screen and (max-width: 1170px) {
+        overflow-y: auto;
+    }
+
+    @media only screen and (max-height: 780px) {
+        overflow-y: auto;
+        max-height: 90%;
+        max-height: 95vh;
+    }
+
+    @media (max-width: 1170px) {
         max-width: 85%;
         max-height: 90%;
         max-height: 95vh;
@@ -58,9 +68,11 @@
     right: -30px;
     top: -30px;
 
-    @media (max-width: 1170px), (max-height: 780px) {
+    @media (max-width: 1170px),
+    (max-height: 780px) {
         right: 10px;
         top: 10px;
+
     }
 }
 
