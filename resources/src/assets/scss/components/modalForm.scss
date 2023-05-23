@@ -36,6 +36,7 @@
 
     @media (max-width: 1024px) {
         max-width: 85%;
+        max-height: 90%;
         max-height: 95vh;
         overflow-y: auto;
     }
@@ -57,7 +58,7 @@
     right: -30px;
     top: -30px;
 
-    @media (max-width: 1170px) {
+    @media (max-width: 1170px), (max-height: 780px) {
         right: 10px;
         top: 10px;
     }
