@@ -10,22 +10,30 @@
                 <div class="swiper-wrapper">
                     <div class="swiper-slide reviews__slide">
                         <div class="reviews__card-image">
-                            <img src="{{ asset('assets/img/rev-1.jpg') }}" alt="">
+                            <a data-fancybox="gallery" href="{{ asset('assets/img/rev-1.jpg') }}">
+                                <img src="{{ asset('assets/img/rev-1.jpg') }}" alt="">
+                            </a>
                         </div>
                     </div>
                     <div class="swiper-slide reviews__slide">
                         <div class="reviews__card-image">
-                            <img src="{{ asset('assets/img/rev-2.jpg') }}" alt="">
+                            <a data-fancybox="gallery" href="{{ asset('assets/img/rev-1.jpg') }}">
+                                <img src="{{ asset('assets/img/rev-1.jpg') }}" alt="">
+                            </a>
                         </div>
                     </div>
                     <div class="swiper-slide reviews__slide">
                         <div class="reviews__card-image">
-                            <img src="{{ asset('assets/img/rev-3.jpg') }}" alt="">
+                            <a data-fancybox="gallery" href="{{ asset('assets/img/rev-1.jpg') }}">
+                                <img src="{{ asset('assets/img/rev-1.jpg') }}" alt="">
+                            </a>
                         </div>
                     </div>
                     <div class="swiper-slide reviews__slide">
                         <div class="reviews__card-image">
-                            <img src="{{ asset('assets/img/rev-4.jpg') }}" alt="">
+                            <a data-fancybox="gallery" href="{{ asset('assets/img/rev-1.jpg') }}">
+                                <img src="{{ asset('assets/img/rev-1.jpg') }}" alt="">
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -39,5 +47,5 @@
         <button class="btn reviews__btn">БОЛЬШЕ ОТЗЫВОВ</button>
     </div>
 
-
+    
 </section>
