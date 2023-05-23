@@ -17,22 +17,22 @@
                     </div>
                     <div class="swiper-slide reviews__slide">
                         <div class="reviews__card-image">
-                            <a data-fancybox="gallery" href="{{ asset('assets/img/rev-1.jpg') }}">
-                                <img src="{{ asset('assets/img/rev-1.jpg') }}" alt="">
+                            <a data-fancybox="gallery" href="{{ asset('assets/img/rev-2.jpg') }}">
+                                <img src="{{ asset('assets/img/rev-2.jpg') }}" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide reviews__slide">
                         <div class="reviews__card-image">
-                            <a data-fancybox="gallery" href="{{ asset('assets/img/rev-1.jpg') }}">
-                                <img src="{{ asset('assets/img/rev-1.jpg') }}" alt="">
+                            <a data-fancybox="gallery" href="{{ asset('assets/img/rev-3.jpg') }}">
+                                <img src="{{ asset('assets/img/rev-3.jpg') }}" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="swiper-slide reviews__slide">
                         <div class="reviews__card-image">
-                            <a data-fancybox="gallery" href="{{ asset('assets/img/rev-1.jpg') }}">
-                                <img src="{{ asset('assets/img/rev-1.jpg') }}" alt="">
+                            <a data-fancybox="gallery" href="{{ asset('assets/img/rev-4.jpg') }}">
+                                <img src="{{ asset('assets/img/rev-4.jpg') }}" alt="">
                             </a>
                         </div>
                     </div>
