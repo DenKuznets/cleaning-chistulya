@@ -43,10 +43,6 @@
 
             button {
                 white-space: nowrap;
-
-                @media only screen and (max-width: $px360) {
-                    font-size: 14px;
-                }
             }
         }
 
