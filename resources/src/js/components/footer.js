@@ -1,4 +1,4 @@
-console.log("footer");
+// console.log("footer");
 
 const px845 = "845px";
 const px560 = "560px";
@@ -20,15 +20,14 @@ const mobileQuery = window.matchMedia(`(max-width: ${px560})`);
 
 // Define a callback function for the event listener.
 function handleSemiDesktop(mql) {
-    // console.log('mql', mql);
     if (mql.matches) {
-        // console.log('mql matches');
-        footer__content.appendChild(footer__disclaimer);
+        console.log('mql matches');
         footer__block1.appendChild(footer__policy);
     } else {
         // console.log('mql not matches');
         footer__block2.appendChild(footer__policy);
-        footer__block1.appendChild(footer__disclaimer);
+        footer__block2.appendChild(footer__alexmedia);
+        // footer__block1.appendChild(footer__disclaimer);
     }
 }
 
@@ -38,18 +37,17 @@ function handleMobile(mql) {
         footer__block1.appendChild(footer__rights);
         footer__block1.appendChild(footer__policy);
         footer__block1.appendChild(footer__alexmedia);
-        footer__block1.appendChild(footer__disclaimer);
     } else {
         // console.log('mql not matches');
-        footer__content.appendChild(footer__disclaimer);
         footer__block2.appendChild(footer__rights);
+        footer__block2.appendChild(footer__policy);
         footer__block2.appendChild(footer__alexmedia);
     }
 }
 
 // Run the width change handler once.
-handleSemiDesktop(semiDesktopQuery);
 handleMobile(mobileQuery);
+handleSemiDesktop(semiDesktopQuery);
 
 // Add the callback function as a listener to the query list.
 semiDesktopQuery.addEventListener("change", handleSemiDesktop);

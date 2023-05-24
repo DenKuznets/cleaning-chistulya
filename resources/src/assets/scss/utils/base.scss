@@ -184,11 +184,13 @@ img {
     text-align: center;
     border: none;
     transition: all 0.3s ease;
+
 }
 
 .btn-cta {
     color: white;
     background: $yellow;
+    max-width: 250px;
 
     &:hover {
         background: $orange;

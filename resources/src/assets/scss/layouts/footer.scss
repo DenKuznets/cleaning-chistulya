@@ -1,5 +1,5 @@
 .footer {
-    $footer-column: '700px';
+    // $footer-column: '700px';
     $footer-semi-desktop: '845px';
     $footer-mobile: '560px';
     
@@ -31,6 +31,7 @@
 
         @media only screen and (max-width: $footer-mobile) {
             flex-direction: column;
+            margin-bottom: 0;
         }
     }
 
@@ -38,6 +39,13 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
+        position: relative;
+        @media only screen and (max-width: $footer-mobile) {
+            margin-bottom: 0;
+            flex-direction: column;
+            // justify-content: center;
+            align-items: center;
+        }
     }
 
     &__logo {
@@ -55,7 +63,14 @@
     }
 
     &__policy {
+        
+        @media only screen and (max-width: $footer-semi-desktop) {
+            position: absolute;
+            top: -40px;
+            right: 71px;
+        }
         @media only screen and (max-width: $footer-mobile) {
+            position: static;
             margin-bottom: 10px;
         }
     }
@@ -66,9 +81,12 @@
     }
 
     &__disclaimer {
-        @media only screen and (max-width: $footer-semi-desktop) {
-            text-align: center;
+        text-align: center;
+        @media only screen and (max-width: $footer-mobile) {
+            margin-bottom: 80px;
         }
-
+        @media only screen and (max-width: $px360) {
+            margin-bottom: 7px;
+        }
     }
 }
